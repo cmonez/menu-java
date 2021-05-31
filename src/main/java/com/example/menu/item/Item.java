@@ -20,6 +20,9 @@ public class Item {
         this.description = description;
         this.image = image;
     }
+
+    @Id // Unique Identifier
+
     public Long getId()
     {
         return id;
@@ -47,7 +50,7 @@ public class Item {
                 item.name,
                 item.price,
                 item.description,
-                item.image,
+                item.image
         );
     }
 }
